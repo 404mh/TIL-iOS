@@ -14,12 +14,15 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var mypageButton: UIBarButtonItem!
     @IBOutlet weak var inputField: UITextView!
+    @IBOutlet weak var yilField: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "TIL"
-        inputField.backgroundColor = .systemGray
+        inputField.backgroundColor = .systemPurple
+        
+        yilField.text = "YIL"
     }
 
 
