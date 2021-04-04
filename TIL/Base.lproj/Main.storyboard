@@ -59,6 +59,7 @@
                     <connections>
                         <outlet property="inputField" destination="Yww-jw-gBT" id="6HI-2N-BNA"/>
                         <outlet property="mypageButton" destination="bQA-Ks-k0B" id="HMH-xE-q0Y"/>
+                        <outlet property="writeButton" destination="S5q-sW-wH3" id="pSb-3z-px3"/>
                         <outlet property="yilField" destination="XWc-zs-pYn" id="RtU-cj-WJd"/>
                     </connections>
                 </viewController>
