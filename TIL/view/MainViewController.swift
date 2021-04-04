@@ -6,12 +6,14 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseStorage
 
 class MainViewController: UIViewController {
     
+    var ref : DatabaseReference!
+    
     // Navbar custom 필요
-    
-    
     @IBOutlet weak var mypageButton: UIBarButtonItem!
     @IBOutlet weak var inputField: UITextView!
     @IBOutlet weak var yilField: UILabel!
@@ -25,5 +27,17 @@ class MainViewController: UIViewController {
         yilField.text = "YIL"
     }
 
-
+    @IBAction func writePost(_ sender: Any) {
+        DispatchQueue.main.async(execute: {
+            self.ref = Database.database().reference()
+            
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd"
+            let date_string = formatter.string(from: Date())
+  
+            self.ref.child("Diary").child(date_string)
+            self.idx += 1;
+        })
+    }
+    
 }
