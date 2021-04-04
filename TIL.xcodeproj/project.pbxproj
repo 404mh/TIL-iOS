@@ -17,6 +17,9 @@
 		45E85CA526115824005FF0DB /* TILTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E85CA426115824005FF0DB /* TILTests.swift */; };
 		45E85CB026115824005FF0DB /* TILUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E85CAF26115824005FF0DB /* TILUITests.swift */; };
 		45E85CC22611586A005FF0DB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E85CC12611586A005FF0DB /* MainViewController.swift */; };
+		53814C0592895E6F9B3D76DE /* Pods_TIL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D596EA991BFC0F71D08B23BD /* Pods_TIL.framework */; };
+		D95FA00507FFE7A62CCC4DA9 /* Pods_TIL_TILUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB7EFE49E07234FF42DD9C8 /* Pods_TIL_TILUITests.framework */; };
+		FCAE0653292492219124EE5F /* Pods_TILTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EB5018348DE2D4AFC6FA01D /* Pods_TILTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,15 @@
 		45E85CAF26115824005FF0DB /* TILUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TILUITests.swift; sourceTree = "<group>"; };
 		45E85CB126115824005FF0DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45E85CC12611586A005FF0DB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4EB5018348DE2D4AFC6FA01D /* Pods_TILTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TILTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FB7EFE49E07234FF42DD9C8 /* Pods_TIL_TILUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TIL_TILUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64C7BA44EBB672C856D4E39A /* Pods-TIL-TILUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIL-TILUITests.release.xcconfig"; path = "Target Support Files/Pods-TIL-TILUITests/Pods-TIL-TILUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7968BC804130FBB58D4DC46A /* Pods-TILTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TILTests.release.xcconfig"; path = "Target Support Files/Pods-TILTests/Pods-TILTests.release.xcconfig"; sourceTree = "<group>"; };
+		C1B9D18DA9F31F410A75447E /* Pods-TILTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TILTests.debug.xcconfig"; path = "Target Support Files/Pods-TILTests/Pods-TILTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE3ED61395ADEB2B05F79519 /* Pods-TIL-TILUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIL-TILUITests.debug.xcconfig"; path = "Target Support Files/Pods-TIL-TILUITests/Pods-TIL-TILUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D596EA991BFC0F71D08B23BD /* Pods_TIL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TIL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E471F84E26B779E6C5B7429B /* Pods-TIL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIL.release.xcconfig"; path = "Target Support Files/Pods-TIL/Pods-TIL.release.xcconfig"; sourceTree = "<group>"; };
+		E9BF682DB68C0947DB0FBA8A /* Pods-TIL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIL.debug.xcconfig"; path = "Target Support Files/Pods-TIL/Pods-TIL.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53814C0592895E6F9B3D76DE /* Pods_TIL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCAE0653292492219124EE5F /* Pods_TILTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +88,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D95FA00507FFE7A62CCC4DA9 /* Pods_TIL_TILUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42695A891E1E8434D103FB90 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9BF682DB68C0947DB0FBA8A /* Pods-TIL.debug.xcconfig */,
+				E471F84E26B779E6C5B7429B /* Pods-TIL.release.xcconfig */,
+				CE3ED61395ADEB2B05F79519 /* Pods-TIL-TILUITests.debug.xcconfig */,
+				64C7BA44EBB672C856D4E39A /* Pods-TIL-TILUITests.release.xcconfig */,
+				C1B9D18DA9F31F410A75447E /* Pods-TILTests.debug.xcconfig */,
+				7968BC804130FBB58D4DC46A /* Pods-TILTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		45E85C8126115823005FF0DB = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +116,8 @@
 				45E85CA326115824005FF0DB /* TILTests */,
 				45E85CAE26115824005FF0DB /* TILUITests */,
 				45E85C8B26115823005FF0DB /* Products */,
+				42695A891E1E8434D103FB90 /* Pods */,
+				58BFEC1F49118E14A1B4A090 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +173,16 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		58BFEC1F49118E14A1B4A090 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D596EA991BFC0F71D08B23BD /* Pods_TIL.framework */,
+				5FB7EFE49E07234FF42DD9C8 /* Pods_TIL_TILUITests.framework */,
+				4EB5018348DE2D4AFC6FA01D /* Pods_TILTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45E85CB426115824005FF0DB /* Build configuration list for PBXNativeTarget "TIL" */;
 			buildPhases = (
+				F203F8F8EDACD6EB0D77D31C /* [CP] Check Pods Manifest.lock */,
 				45E85C8626115823005FF0DB /* Sources */,
 				45E85C8726115823005FF0DB /* Frameworks */,
 				45E85C8826115823005FF0DB /* Resources */,
+				68E6D0D38717B4DB5C6DA565 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,6 +209,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45E85CB726115824005FF0DB /* Build configuration list for PBXNativeTarget "TILTests" */;
 			buildPhases = (
+				78C0B2E9B93070017B256E72 /* [CP] Check Pods Manifest.lock */,
 				45E85C9C26115824005FF0DB /* Sources */,
 				45E85C9D26115824005FF0DB /* Frameworks */,
 				45E85C9E26115824005FF0DB /* Resources */,
@@ -184,9 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45E85CBA26115824005FF0DB /* Build configuration list for PBXNativeTarget "TILUITests" */;
 			buildPhases = (
+				89CD0E5C6C78F6E993CFF46D /* [CP] Check Pods Manifest.lock */,
 				45E85CA726115824005FF0DB /* Sources */,
 				45E85CA826115824005FF0DB /* Frameworks */,
 				45E85CA926115824005FF0DB /* Resources */,
+				9B19A4FB22480AFDC1E285F8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -267,6 +313,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68E6D0D38717B4DB5C6DA565 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TIL/Pods-TIL-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TIL/Pods-TIL-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TIL/Pods-TIL-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78C0B2E9B93070017B256E72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TILTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89CD0E5C6C78F6E993CFF46D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TIL-TILUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B19A4FB22480AFDC1E285F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TIL-TILUITests/Pods-TIL-TILUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TIL-TILUITests/Pods-TIL-TILUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TIL-TILUITests/Pods-TIL-TILUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F203F8F8EDACD6EB0D77D31C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TIL-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		45E85C8626115823005FF0DB /* Sources */ = {
@@ -449,6 +598,7 @@
 		};
 		45E85CB526115824005FF0DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9BF682DB68C0947DB0FBA8A /* Pods-TIL.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -468,6 +618,7 @@
 		};
 		45E85CB626115824005FF0DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E471F84E26B779E6C5B7429B /* Pods-TIL.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -487,6 +638,7 @@
 		};
 		45E85CB826115824005FF0DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1B9D18DA9F31F410A75447E /* Pods-TILTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -509,6 +661,7 @@
 		};
 		45E85CB926115824005FF0DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7968BC804130FBB58D4DC46A /* Pods-TILTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -531,6 +684,7 @@
 		};
 		45E85CBB26115824005FF0DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE3ED61395ADEB2B05F79519 /* Pods-TIL-TILUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -551,6 +705,7 @@
 		};
 		45E85CBC26115824005FF0DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64C7BA44EBB672C856D4E39A /* Pods-TIL-TILUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

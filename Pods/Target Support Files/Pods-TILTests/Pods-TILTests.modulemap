@@ -1,0 +1,6 @@
+framework module Pods_TILTests {
+  umbrella header "Pods-TILTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
