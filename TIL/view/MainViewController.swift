@@ -50,15 +50,15 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
             self.ref = Database.database().reference()
             
             let formatter = DateFormatter()
-            formatter.dateFormat = "yyyy-MM-dd"
+            formatter.dateFormat = "yyyy-MM-dd-kk:mm:ss"
             let dateString = formatter.string(from: Date())
             
             var dic = [String: String]()
             
             dic["\(dateString)"] = self.inputField.text
             
-            self.ref.child("Diary").child("user").child("text").setValue(dic)
-            
+            self.ref.child("Diary").child("user").child(dateString).setValue(dic)
+           
 //            child("text").setValue(self.inputField.text)
             
             self.inputField.text = ""
