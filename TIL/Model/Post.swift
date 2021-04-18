@@ -9,7 +9,6 @@ import Foundation
 
 struct Post {
     
-    let date: Date
     let mainText: String
     
 }

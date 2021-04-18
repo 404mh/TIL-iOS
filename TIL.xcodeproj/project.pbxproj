@@ -118,6 +118,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		45C92A332620896100CF0628 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
 		45E85C8126115823005FF0DB = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +184,7 @@
 		45E85CC026115838005FF0DB /* view */ = {
 			isa = PBXGroup;
 			children = (
+				45C92A332620896100CF0628 /* cell */,
 				45E85C9126115823005FF0DB /* ViewController.swift */,
 				45E85CC12611586A005FF0DB /* MainViewController.swift */,
 			);

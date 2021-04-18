@@ -13,15 +13,20 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     @IBOutlet weak var verticalCollectionView: UIView!
     
-    var ref: DatabaseReference!
-    var posts = [Post]()
-    var idx = 1
+    lazy var diary: [Post] = {
+        var postList = [Post]()
+        return postList
+    }()
+    
+    var ref: DatabaseReference = Database.database().reference()
     // Navbar custom 필요
     @IBOutlet weak var mypageButton: UIBarButtonItem!
     @IBOutlet weak var inputField: UITextView!
     @IBOutlet weak var yilField: UILabel!
     @IBOutlet weak var writeButton: UIButton!
+    
     override func viewDidLoad() {
+        updateData()
         super.viewDidLoad()
         
         self.title = "TIL"
@@ -36,12 +41,11 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         collectionView.frame = CGRect(x: 0, y: 0, width: self.verticalCollectionView.frame.width, height: self.verticalCollectionView.frame.height)
         
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
-
+        
     }
-
+    
     @IBAction func writePost(_ sender: Any) {
-        self.ref = Database.database().reference()
-            
+        
         DispatchQueue.main.async(execute: {
             self.ref = Database.database().reference()
             
@@ -49,20 +53,27 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
             formatter.dateFormat = "yyyy-MM-dd"
             let dateString = formatter.string(from: Date())
             
-            self.ref.child("Diary").child(dateString).child(String(self.idx)).setValue(self.inputField?.text)
+            var dic = [String: String]()
+            
+            dic["\(dateString)"] = self.inputField.text
+            
+            self.ref.child("Diary").child("user").child("text").setValue(dic)
+            
+//            child("text").setValue(self.inputField.text)
             
             self.inputField.text = ""
-            self.idx += 1
+            
         })
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return self.diary.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        
+        cell.backgroundColor = .cyan
         for subView in cell.subviews {
             subView.removeFromSuperview()
         }
@@ -76,7 +87,7 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         cell.addSubview(label)
         label.frame = CGRect(x: 0, y: 0, width: cell.frame.width, height: cell.frame.height)
-
+        
         return cell
     }
     
@@ -94,6 +105,18 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         return cv
     }()
     
-    
-
+    func updateData() {
+        ref.child("Diary").child("user").child("text").child("date").observe(.value, with: {(snapshot) in
+            
+            let values = snapshot.value as? [String: AnyObject] ?? [:]
+            for element in values.values {
+                print(element)
+            }
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+                
+            }
+            
+        })
+    }
 }

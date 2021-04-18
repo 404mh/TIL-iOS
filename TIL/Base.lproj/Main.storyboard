@@ -36,20 +36,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ejI-CF-eRV">
-                                <rect key="frame" x="20" y="591" width="374" height="248"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="C3a-Pq-yQo">
+                                <rect key="frame" x="0.0" y="594" width="414" height="292"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xj3-jO-h2J">
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QvZ-Sc-8nz">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="kcH-6S-bXd">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gph-vB-z2s">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Kf2-ix-5wJ">
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="L03-gj-AuU">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </collectionViewCellContentView>
@@ -63,13 +63,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S5q-sW-wH3" secondAttribute="trailing" constant="20" id="7a4-OC-O2X"/>
                             <constraint firstItem="Yww-jw-gBT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="96" id="DAf-hD-oWS"/>
                             <constraint firstItem="S5q-sW-wH3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="EhJ-hy-fu3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ejI-CF-eRV" secondAttribute="bottom" constant="23" id="HxN-iJ-d4W"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ejI-CF-eRV" secondAttribute="trailing" constant="20" id="YJ3-FH-6We"/>
+                            <constraint firstItem="C3a-Pq-yQo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Lej-rp-1jg"/>
+                            <constraint firstItem="C3a-Pq-yQo" firstAttribute="top" secondItem="XWc-zs-pYn" secondAttribute="bottom" constant="24" id="MB9-Ho-hFZ"/>
+                            <constraint firstAttribute="bottom" secondItem="C3a-Pq-yQo" secondAttribute="bottom" constant="10" id="S5y-GR-thr"/>
                             <constraint firstItem="S5q-sW-wH3" firstAttribute="top" secondItem="Yww-jw-gBT" secondAttribute="bottom" constant="10" id="auk-dp-Vf7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C3a-Pq-yQo" secondAttribute="trailing" id="hmI-M3-uVc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yww-jw-gBT" secondAttribute="trailing" constant="20" id="i47-Ry-a9b"/>
-                            <constraint firstItem="ejI-CF-eRV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iS6-Ac-TaF"/>
                             <constraint firstItem="XWc-zs-pYn" firstAttribute="leading" secondItem="S5q-sW-wH3" secondAttribute="leading" id="jTY-Ls-g2D"/>
-                            <constraint firstItem="ejI-CF-eRV" firstAttribute="top" secondItem="XWc-zs-pYn" secondAttribute="bottom" constant="21" id="lyz-8C-dJi"/>
                             <constraint firstItem="XWc-zs-pYn" firstAttribute="top" secondItem="S5q-sW-wH3" secondAttribute="bottom" constant="47" id="qVP-F9-QOU"/>
                             <constraint firstItem="Yww-jw-gBT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uTD-c0-jSf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Yww-jw-gBT" secondAttribute="bottom" constant="400" id="zm7-kS-QjO"/>
@@ -85,7 +85,7 @@
                     <connections>
                         <outlet property="inputField" destination="Yww-jw-gBT" id="6HI-2N-BNA"/>
                         <outlet property="mypageButton" destination="bQA-Ks-k0B" id="HMH-xE-q0Y"/>
-                        <outlet property="verticalCollectionView" destination="ejI-CF-eRV" id="EsX-DX-ddD"/>
+                        <outlet property="verticalCollectionView" destination="C3a-Pq-yQo" id="Zf4-yI-Fl7"/>
                         <outlet property="writeButton" destination="S5q-sW-wH3" id="pSb-3z-px3"/>
                         <outlet property="yilField" destination="XWc-zs-pYn" id="RtU-cj-WJd"/>
                     </connections>
