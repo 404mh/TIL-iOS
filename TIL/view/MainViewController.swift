@@ -57,7 +57,7 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
             
             dic["\(dateString)"] = self.inputField.text
             
-            self.ref.child("Diary").child("user").child(dateString).setValue(dic)
+            self.ref.child("Diary").child("user").child("date").child(dateString).setValue(dic)
            
 //            child("text").setValue(self.inputField.text)
             
@@ -106,11 +106,10 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }()
     
     func updateData() {
-        ref.child("Diary").child("user").child("text").child("date").observe(.value, with: {(snapshot) in
+        ref.child("Diary").child("user").child("date").observe(.value, with: {(snapshot) in
             
             let values = snapshot.value as? [String: AnyObject] ?? [:]
-            for element in values.values {
-                print(element)
+            for element in values {
             }
             DispatchQueue.main.async {
                 self.collectionView.reloadData()
