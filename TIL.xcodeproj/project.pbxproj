@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		45B22D902619A6AE001AC461 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45B22D8F2619A6AE001AC461 /* GoogleService-Info.plist */; };
 		45B22DA62619A9B7001AC461 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B22DA52619A9B7001AC461 /* Post.swift */; };
+		45CDC2BB2640188600E29E15 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CDC2BA2640188600E29E15 /* LoginViewController.swift */; };
 		45E85C8E26115823005FF0DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E85C8D26115823005FF0DB /* AppDelegate.swift */; };
 		45E85C9026115823005FF0DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E85C8F26115823005FF0DB /* SceneDelegate.swift */; };
 		45E85C9226115823005FF0DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E85C9126115823005FF0DB /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		45B22D8F2619A6AE001AC461 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		45B22DA52619A9B7001AC461 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		45CDC2BA2640188600E29E15 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = TIL/View/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
 		45E85C8A26115823005FF0DB /* TIL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TIL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E85C8D26115823005FF0DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45E85C8F26115823005FF0DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				45C92A332620896100CF0628 /* cell */,
 				45E85C9126115823005FF0DB /* ViewController.swift */,
 				45E85CC12611586A005FF0DB /* MainViewController.swift */,
+				45CDC2BA2640188600E29E15 /* LoginViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -440,6 +443,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45CDC2BB2640188600E29E15 /* LoginViewController.swift in Sources */,
 				45E85C9226115823005FF0DB /* ViewController.swift in Sources */,
 				45E85C8E26115823005FF0DB /* AppDelegate.swift in Sources */,
 				45E85C9026115823005FF0DB /* SceneDelegate.swift in Sources */,
