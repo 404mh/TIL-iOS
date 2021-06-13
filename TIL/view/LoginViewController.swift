@@ -6,12 +6,17 @@
 //
 
 import UIKit
+import Foundation
+import Firebase
 
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var appleLoginButton: UIImageView!
     @IBOutlet weak var githubLoginButton: UIImageView!
     
+    var provider = OAuthProvider(providerID: "github.com")
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
