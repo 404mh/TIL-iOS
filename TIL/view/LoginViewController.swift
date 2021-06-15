@@ -13,7 +13,10 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var githubLoginButton: UIButton!
     
-    var provider = OAuthProvider(providerID: "github.com")
+    
+    let clientID = "2d0caaa45eb1213f8bb6"
+    let scope = "repo gist user"
+    let urlString = "https://github.com/login/oauth/authorize"
     
     
     override func viewDidLoad() {
@@ -21,7 +24,16 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func githubLogin(_ sender: Any) {
+        var components = URLComponents(string: urlString)!
         
+        components.queryItems = [
+            URLQueryItem(name: "client_id", value: self.clientID),
+            URLQueryItem(name: "scope", value: self.scope),
+        ]
+        
+        guard let url = URL(string: urlString) else { return }
+        
+        UIApplication.shared.open(url)
     }
     
     
